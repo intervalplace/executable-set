@@ -1,0 +1,72 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  background: #0b0b0c;
+  color: #eaeaea;
+  margin: 0;
+  padding: 40px;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.thesis {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.definition,
+.epistemology {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.formula {
+  background: #111;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: monospace;
+  margin-bottom: 30px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.column {
+  background: #141416;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.value {
+  font-size: 36px;
+  margin: 12px 0;
+}
+
+.zero {
+  color: #666;
+}
+
+.note {
+  color: #aaa;
+}
+
+.meta {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #888;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 12px;
+  color: #666;
+}
