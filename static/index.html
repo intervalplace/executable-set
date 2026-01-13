@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Executable Set</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<main>
+  <h1>Executable Set</h1>
+
+  <p class="thesis">
+    <strong>Authorized liquidity is real liquidity.</strong><br>
+    Execution is just settlement.
+  </p>
+
+  <p class="definition">
+    Liquidity exists at time <em>t</em> if and only if the executable set 𝓔(t) is non-empty.
+  </p>
+
+  <p class="epistemology">
+    This page does not execute transactions.
+    It displays the set of transactions that <em>would succeed if executed right now</em>,
+    without requiring new consent.
+  </p>
+
+  <section class="formula">
+    <strong>Reachable Now</strong> =
+    min(
+      <a id="balLink" target="_blank">balance</a>,
+      <a id="allowLink" target="_blank">allowance</a>,
+      maxPerPull
+    )
+    <br>
+    <small>if time window valid and not revoked</small>
+  </section>
+
+  <section class="columns">
+    <div class="column">
+      <h2>PUSH</h2>
+      <div class="value zero">0</div>
+      <p class="note">
+        No third party can execute from a wallet without new consent.
+      </p>
+    </div>
+
+    <div class="column">
+      <h2>PULL</h2>
+      <div id="pullValue" class="value">—</div>
+      <p class="note">
+        Executable from wallet now, without new consent.
+      </p>
+    </div>
+  </section>
+
+  <section class="meta">
+    <div>
+      Authorization Hash:
+      <a id="authLink" target="_blank"></a>
+    </div>
+    <div>Status: <span id="status"></span></div>
+    <div>Last evaluated at: <span id="updated"></span></div>
+  </section>
+
+  <footer>
+    Anyone can reproduce these numbers with JSON-RPC calls.
+    No server state is involved.
+  </footer>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
